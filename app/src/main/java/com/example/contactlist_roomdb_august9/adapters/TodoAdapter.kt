@@ -30,7 +30,7 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     private val differCallback = object : DiffUtil.ItemCallback<Todo>() {
         override fun areItemsTheSame(oldItem: Todo, newItem: Todo): Boolean {
-            return oldItem.task == newItem.task
+            return oldItem.todoTask == newItem.todoTask
         }
 
         override fun areContentsTheSame(oldItem: Todo, newItem: Todo): Boolean {
@@ -43,7 +43,7 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
     class TodoViewHolder(private val binding: ListItemTodoBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(todo: Todo) {
-            binding.tvTodo.text = todo.task
+            binding.tvTodo.text = todo.todoTask
         }
     }
 }
