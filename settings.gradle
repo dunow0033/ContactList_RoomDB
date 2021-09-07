@@ -1,0 +1,2 @@
+rootProject.name = "ContactList_RoomDB_August9"
+include ':app'
