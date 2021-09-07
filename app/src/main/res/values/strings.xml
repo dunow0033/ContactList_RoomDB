@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ContactList_RoomDB_August9</string>
+    <string name="add_todo">Add todo</string>
 </resources>
