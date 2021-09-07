@@ -10,6 +10,10 @@ interface TodoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTodo(todo: Todo)
 
+//    @Insert(onConflict = OnConflictStrategy.REPLACE)
+//    suspend fun addTodos(vararg todo : Array<Todo>)
+//    suspend fun addTodos(todos : List<Todo>)
+
     @Query("SELECT * FROM todos")
     fun getTodos(): Flow<List<Todo>>
 
