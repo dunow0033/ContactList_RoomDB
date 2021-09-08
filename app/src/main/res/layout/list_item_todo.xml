@@ -6,10 +6,15 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvTodo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:textAppearance="?textAppearanceHeadline5"
         tools:text="TODO" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_todo" />
 
 </LinearLayout>
