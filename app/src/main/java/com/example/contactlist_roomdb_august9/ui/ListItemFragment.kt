@@ -1,15 +1,17 @@
 package com.example.contactlist_roomdb_august9.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.contactlist_roomdb_august9.databinding.ListItemTodoBinding
+import com.example.contactlist_roomdb_august9.model.Todo
 
 class ListItemFragment : Fragment() {
     private var _binding: ListItemTodoBinding? = null
-    private val binding: LitItemTodoBinding get() = _binding
+    private val binding: ListItemTodoBinding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +28,6 @@ class ListItemFragment : Fragment() {
         with(binding){
             deleteTodo.setOnClickListener{
                 Log.d("TAG", "clicked!!")
-                viewModel.deleteTodo(Todo(todoTask = todo))
             }
         }
     }
