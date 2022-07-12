@@ -1,3 +1,5 @@
 # ContactList_RoomDB
 
-my own personal contact list, delete isn't working, so it needs more work
+using this as a small blueprint to make the following work
+
+https://github.com/dunow0033/BrianContactList
